@@ -1,0 +1,5 @@
+2022-01-06T14:18:41.5715440-03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
+2022-01-06T14:18:41.5991576-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2022-01-06T14:18:41.6005502-03:00  [INF] Hosting environment: "Development" (c3307c92)
+2022-01-06T14:18:41.6006604-03:00  [INF] Content root path: "C:\Users\Nicolas\Desktop\projetohotsite" (b5d60022)
+2022-01-06T14:38:58.8546649-03:00  [INF] Application is shutting down... (90f52c38)

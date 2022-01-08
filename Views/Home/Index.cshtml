@@ -1,0 +1,280 @@
+﻿@model Interesse
+
+<div class="row">
+    <div class="col-md-6">
+        <h1>Iniciativa Saúde da Cidade</h1>
+        <p>
+            Texto sobre vida saudável: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+        <p>
+            Texto sobre vida iniciativa: Lorem ipsum dolor sit amet et delectus accommodare his consul copiosae legendos
+            at vix ad putent delectus delicata usu. Vidit dissentiet eos cu eum an brute copiosae hendrerit.
+        </p>
+    </div>
+
+    <div class="col-md-6">
+        <img src="/img/saude.jpg" width="500px">
+
+    </div>
+
+</div>
+
+<div class="row mt-3">
+
+    @*Formulario*@
+
+    <div class="col-md-6 border border-dark" id="frm">
+        <h2>Entre em contato!:</h2>
+        <p>Nos mande uma mensagem e fique por dentro de nossos eventos</p>
+
+        <form method="POST" id="frmCadastro">
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Nome">Nome:</label>
+                </div>
+                <div class="col-md-9">
+                    <input asp-for="Nome" id="nome" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Email">Email:</label>
+                </div>
+                <div class="col-md-9">
+                    <input asp-for="Email" id="email" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <label asp-for="Mensagem">Mensagem (opcional):</label>
+                </div>
+                <div class="col-md-9">
+                    <textarea asp-for="Mensagem" id="mensagem"></textarea>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" value="Enviar" id="btnEmvio" class="mb-3" />
+                </div>
+            </div>
+
+
+
+
+        </form>
+    </div>
+
+    @* IMAGENS E OS LINKS PARA ABRIR AS MODAIS*@
+
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-4">
+                <figure class="figure">
+                    <img src="/img/agenda2.jpg" class="figure-img img-fluid rounded" alt="Agenda de eventos">
+                    <figcaption class="figure-caption text-center">
+                        <a href="#" data-toggle="modal" data-target="#AgendaDeEventos"> Agenda de eventos</a>
+                    </figcaption>
+                </figure>
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <figure class="figure">
+                    <img src="/img/dicas2.jpg" class="figure-img img-fluid rounded" alt="Dicas de vida saudável">
+                    <figcaption class="figure-caption text-center">
+                        <a href="#" data-toggle="modal" data-target="#DicasDeVidaSaudavel"> Dicas de vida saudável</a>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+
+
+            <div class="col-md-4">
+
+                <figure class="figure">
+                    <img src="/img/apoiadores.jpg" class="figure-img img-fluid rounded" alt="Apoiadores">
+                    <figcaption class="figure-caption text-center">
+                        <a href="#" data-toggle="modal" data-target="#Apoiadores"> Apoiadores</a>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal Agenda -->
+<div class="modal fade" id="AgendaDeEventos" tabindex="-1" role="dialog" aria-labelledby="exampleAgendaDeEventos"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleAgendaDeEventos">Agenda de eventos</h5>
+
+            </div>
+            <div class="modal-body">
+                <h6 class="dataagenda">
+                    <strong>08/01/2022 - 10:10 Evento 1</strong>
+                </h6>
+
+                <p class="conteudo-escrito">
+                    Lorem Ipsum is simply dummy<br>
+                    text of the printing and <br>
+                    typesetting industry.<br>
+                </p>
+                <br>
+                <h6 class="dataagenda">
+                    <strong> 08/01/2022 - 13:15 Evento 2 </strong>
+                </h6>
+
+                <p class="conteudo-escrito">
+                    Lorem Ipsum is simply dummy<br>
+                    text of the printing and <br>
+                    typesetting industry.<br>
+                </p>
+                <br>
+                <h6 class="dataagenda">
+                    <strong>08/01/2022 - 15:30 Evento 3</strong>
+                </h6>
+
+                <p class="conteudo-escrito">
+                    Lorem Ipsum is simply dummy<br>
+                    text of the printing and <br>
+                    typesetting industry.<br>
+                </p>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal Dicas  -->
+<div class="modal fade" id="DicasDeVidaSaudavel" tabindex="-1" role="dialog"
+    aria-labelledby="exampleDicasDeVidaSaudável" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleDicasDeVidaSaudável">Dicas De Vida Saudável</h5>
+
+            </div>
+            <div class="modal-body">
+                <p>
+                    Lorem Ipsum passages,<br>
+                    and more recently with desktop<br>
+                    publishing software like Aldus PageMaker<br>
+                    including versions of Lorem Ipsum.<br>
+                </p>
+                <br>
+                <p>
+                    Lorem Ipsum passages,<br>
+                    and more recently with desktop<br>
+                    publishing software like Aldus PageMaker<br>
+                    including versions of Lorem Ipsum.<br>
+                </p>
+                <br>
+                <p>
+                    Lorem Ipsum passages,<br>
+                    and more recently with desktop<br>
+                    publishing software like Aldus PageMaker<br>
+                    including versions of Lorem Ipsum.<br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal Apoiadores -->
+<div class="modal fade" id="Apoiadores" tabindex="-1" role="dialog" aria-labelledby="exampleApoiadores"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleApoiadores">Apoiadores</h5>
+
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <img class="empresasimg" src="/img/empresa1.jpg" width="100px">
+                    <p class="texto-apoiadores">
+                        Mercado Livre<br>
+                        descrição<br>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <img class="empresasimg" src="/img/empresa2.jpg" width="100px">
+                    <p class="texto-apoiadores">
+                        Mercado Livre<br>
+                        descrição<br>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <img class="empresasimg" src="/img/empresa3.png" width="100px">
+                    <p class="texto-apoiadores">
+                        Mercado Livre<br>
+                        descrição<br>
+                    </p>
+                </div>
+
+                <div class="row">
+                    <img class="empresasimg" src="/img/empresa4.png" width="100px">
+                    <p class="texto-apoiadores">
+                        Mercado Livre<br>
+                        descrição<br>
+                    </p>
+                </div>
+
+                <style>
+                    .texto-apoiadores {
+                        padding: 2px;
+                        margin-top: 10px;
+                    }
+
+                    .modal-body {
+                        padding: 5px;
+                    }
+
+                    .empresasimg {
+                        padding: 5px;
+                        border-radius: 20px;
+                        height: 88px;
+                        border: 2px solid black;
+                        margin-top: 10px;
+                    }
+                </style>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+@* ESTILIZAÇÃO DAS MODAIS*@
+
+<style>
+    .modal-content {
+        align-items: center;
+        font-family: 'Bebas Neue', cursive;
+    }
+
+    .conteudo-escrito,
+    .dataagenda {}
+</style>
